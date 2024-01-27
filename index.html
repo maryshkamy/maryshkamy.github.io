@@ -1,1 +1,609 @@
-Hello World
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana's Portfolio</title>
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+      - #MAIN
+    -->
+    <main>
+        <!--
+          - #SIDEBAR
+        -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./images/mariana-memoji.png" alt="Mariana's memoji" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Mariana Rios">Mariana Rios</h1>
+                    <p class="title">iOS Engineer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:marianariossc@gmail.com" class="contact-link">marianariossc@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+12268999162" class="contact-link">+1 (226) 899-9162</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+                            <time datetime="1992-06-06">June 06, 1992</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Waterloo, Ontario, CA</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/maryshkamy/" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://github.com/maryshkamy" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!--
+          - #main-content
+        -->
+        <div class="main-content">
+            <!--
+              - #NAVBAR
+            -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--
+              - #ABOUT
+            -->
+            <article class="about  active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I'm a developer from Brasília, Brazil, working in iOS Development and Game Development.
+                    </p>
+
+                    <p>
+                        I possess a strong foundation in iOS Development and expertise in Swift, aligning with industry best practices 
+                        such as BDD, TDD, and Agile Methodologies. My proficiency extends to establishing and optimizing mobile pipelines.
+                    </p>
+
+                    <p>
+                        My key strengths include analytical skills, critical thinking, problem-solving, attention to detail, result-oriented, 
+                        strong communication, and teamwork.
+                    </p>
+                </section>
+
+
+                <!--
+                  - service
+                -->
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./images/icon-app.svg" alt="mobile app icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                                <p class="service-item-text">
+                                    Professional development of applications for iOS.
+                                </p>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </section>
+
+
+                <!--
+                  - testimonials
+                -->
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Testimonials</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/user_fill.svg" alt="Person avatar" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sina Naeini</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I am delighted to recommend Mariana for her outstanding performance in the Software Development 
+                                        Techniques class. Her grasp of intricate programming concepts, coupled with a proactive approach 
+                                        to problem-solving, stood out prominently. Mariana’s collaborative spirit, adept communication 
+                                        skills, and consistent drive to excel make her a commendable candidate ready to thrive in any 
+                                        software development endeavor.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/user_fill.svg" alt="Person avatar" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Vinícius Emanuel</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I had worked with Mariana for a couple of months in the same project at Thoughtworks, but at that time 
+                                        she proved herself as very capable person in points like:
+                                    </p>
+
+                                    <p>* Where we can do better in the client project.</p>
+                                    <p>* Be a technical reference person for the team.</p>
+                                    <p>* Guide technical decisions and always influence people towards the best context-based approaches.</p>
+
+                                    <p>I rightly recommend Mariana as a very skillful and experienced iOS developer!</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/user_fill.svg" alt="Person avatar" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Andressa Neumann</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I had the privilege to work with Mariana and I can affirm that she is a very responsible person, a very 
+                                        skilled iOS developer who cares so much about the quality of the work being delivered to the client. She’s 
+                                        also very communicative and willing to help others, she helped me with my onboarding on the team and the 
+                                        process was great because she was very open to sharing knowledge, knew everything about the process and the 
+                                        code, and was very kind to answer every possible doubt that I had. I couldn’t recommend her enough! I wish 
+                                        her all the best and success in her career.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/user_fill.svg" alt="Person avatar" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Juan Gedler</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I had the opportunity to work with Mariana and I can say that she is a very responsible person, who cares about 
+                                        the quality of the work she delivers, has good knowledge and skill at a technical level, demonstrates a very good 
+                                        willingness to help others and is very communicative when sharing her opinion and points of view. I consider her 
+                                        to be a very good professional and it was very pleasant to work with her.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./images/user_fill.svg" alt="Person avatar" width="60" data-testimonials-avatar>
+                                </figure>
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Carlos Medina</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I had the privilege of working with Mariana Rios for approximately six months on a challenging mobile project, and 
+                                        I can confidently say that she is an exceptional iOS developer. Mariana's expertise and dedication were invaluable 
+                                        to our team, and her technical skills played a crucial role in our project's successful and timely completion.
+                                    </p><br>
+
+                                    <p>
+                                        Mariana consistently demonstrated a deep understanding of iOS development, a keen eye for detail, and a 
+                                        problem-solving mindset that was second to none. Her ability to tackle complex issues and find elegant 
+                                        solutions was truly impressive. Mariana also had a knack for staying up-to-date with the latest industry 
+                                        trends and best practices, which greatly benefited our project.
+                                    </p><br>
+
+                                    <p>
+                                        What sets Mariana apart is not only her technical prowess but also her outstanding teamwork and communication skills. 
+                                        She was always proactive in sharing her ideas, collaborating with team members, and providing insightful feedback. 
+                                        Her positive attitude and willingness to go the extra mile to ensure the project's success were truly commendable.
+
+                                        It was a pleasure working with her, and I am confident that she will continue to excel in her career.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <!--
+                    - testimonials modal
+                -->
+                <div class="modal-container" data-modal-container>
+                    <div class="overlay" data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="./images/user_fill.svg" alt="Person avatar" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="./images/icon-quote.svg" alt="quote icon">
+                        </div>
+
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Name</h4>
+
+                            <!-- <time datetime="2024-01-01" data-modal-date>01 January, 2024</time> -->
+
+                            <div data-modal-text>
+                                <p>
+                                    Message
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <!--
+                - #RESUME
+            -->
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Conestoga College</h4>
+
+                            <span>2023 — Present</span>
+
+                            <p class="timeline-text">
+                                Mobile Solutions Development (Co-op)
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Centro Universitário IESB</h4>
+
+                            <span>2017 — 2018</span>
+
+                            <p class="timeline-text">
+                                Mobile Device Development
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Pontifícia Universidade Católica de Minas Gerais -  PUC Minas</h4>
+
+                            <span>2012 — 2016</span>
+
+                            <p class="timeline-text">
+                                Digital Games
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Senior Mobile Developer - Thoughtworks</h4>
+
+                            <span>2019 — 2023</span>
+
+                            <p class="timeline-text">
+                                • Provided excellent customer service through engaging client interactions. Addressed client requirements and 
+                                swiftly resolved any project-related issues. Actively contributed to enhancing and expanding iOS Application 
+                                features and iOS Frameworks, focusing on improving software quality, readability, and maintainability.
+                            </p><br>
+
+                            <p class="timeline-text">
+                                • Executed tests with a focus on industry best practices such as Test-Driven Development (TDD), 
+                                Continuous Integration (CI), and Continuous Delivery (CD). This approach ensured efficient 
+                                planning and minimized the need for reworking.
+                            </p><br>
+
+                            <p class="timeline-text">
+                                • Developed strategies to establish a robust CI/CD environment for iOS using Bitrise, ensuring 
+                                timely delivery of product features to end customers.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">iOS Developer - Ebllas Barbosa Ávila ME</h4>
+
+                            <span>2018 — 2019</span>
+
+                            <p class="timeline-text">
+                                • Developed the iOS application for both customer and organizer applications regarding product advertisements 
+                                selling online ensuring customer satisfaction. 
+                            </p><br>
+
+                            <p class="timeline-text">
+                                • Developed the main application, integrating a social media platform with an expansive marketplace, offering 
+                                users and vendors the opportunity to engage in transactions across a diverse range of products, including but 
+                                not limited to clothing, food, accessories, and more.
+                            </p><br>
+
+                            <p class="timeline-text">
+                                • Developed a secondary application, serving as a comprehensive management platform, equips organizers with 
+                                the tools needed to oversee product orders and streamline the delivery process ensuring customer satisfaction.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Mobile Developer - Vicax Tecnologia e Gestão</h4>
+
+                            <span>2017 — 2018</span>
+
+                            <p class="timeline-text">
+                                • Developed application online banking using React Native, providing services to customers regarding digital 
+                                banking transactions and providing customer satisfaction.
+                            </p><br>
+
+                            <p class="timeline-text">
+                                • Developed insurance application, facilitating online quotes, and addressing orders to small clients increasing revenue.
+                            </p><br>
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">My skills</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">iOS Development</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Swift</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Analytical Skills</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Problem Solving</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!--
+                - #PORTFOLIO
+            -->
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+
+                        <!-- <li class="filter-item">
+                            <button data-filter-btn>Applications</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Games</button>
+                        </li> -->
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-selecct-value>Select category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+                            <!-- <li class="select-item">
+                                <button data-select-item>Applications</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Games</button>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item  active" data-filter-item data-category="applications">
+                            <a href="https://www.facebook.com/nexusforlol/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./images/nexus.png" alt="nexus" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Nexus</h3>
+
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+    
+    <!--
+        - custom js link
+    -->
+    <script src="./js/script.js"></script>
+    
+    <!--
+        - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
